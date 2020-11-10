@@ -1,6 +1,6 @@
 // Square iconed button with active state - it also launch an event on click
 // CSS Variables = [themeColor]
-import {LitElement, html, css} from 'http://unpkg.com/lit-element?module'
+import {LitElement, html, css} from 'https://unpkg.com/lit-element@2.4.0/lit-element.js?module'
 
 class iconButton extends LitElement{
     
