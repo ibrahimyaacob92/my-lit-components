@@ -56,7 +56,7 @@ class iconButton extends LitElement{
 
     render(){
         return html`
-            <div active=${this.active} class @click=${this.launchApp}>
+            <div active=${this.active} @click=${this.launchApp}>
                 <img part=icon width="35px" height="35px" src=${this.svgLink} alt="">
                 <span part="label">${this.label}</span>
             </div>

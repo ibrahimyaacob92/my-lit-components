@@ -8,15 +8,31 @@
     <title>My Web Components Playground</title>
 </head>
 <body>
-    <div id="demo1">
-        <div style="float: left;">
+    <div id="demo1" class="demo">
+        <p>A simple icon button</p>
+        <div>
             <icon-btn label="Button A" appName="ButtonA" svgLink="https://www.flaticon.com/svg/static/icons/svg/3616/3616337.svg"></icon-btn>
             <icon-btn label="Button B" appName="ButtonB" svgLink="https://www.flaticon.com/svg/static/icons/svg/3616/3616382.svg"></icon-btn>
         </div>
-        <div>
-            Event Catcher
-        </div>
     </div>
-    
+    <hr>
+    <div id="demo2" class="demo">
+        <p>A card with accent</p>
+        <pretty-card 
+            id="test-pretty" 
+            smallTitle="this is just a smaller text"
+            title="Hello Worlds"
+            subtitle="this is a large subtitle and making"
+            hiddenText="this is invisible"
+            colorStat="green">
+        </pretty-card>
+    </div>
+
+    <hr>
+    <div class="demo">
+        <p>A table that didnt make it</p>
+        <json-table></json-table>
+    </div>
+    <hr>
 </body>
 </html>
