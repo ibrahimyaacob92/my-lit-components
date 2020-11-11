@@ -27,15 +27,15 @@ class iconButton extends LitElement{
             div{
                 width:46px;
                 height:50px;
-                background-color:var(--themeColor, grey);
-                border-left: var(--themeColor, grey) solid 3px;
+                background-color:var(--themeColor, lightgrey);
+                border-left: var(--themeColor, lightgrey) solid 3px;
                 text-align:center;
                 padding: 2px;
             
             }
             div:hover{
                 cursor:pointer;
-                background-color:white;
+                border-left-color:grey;
             }
 
             span{

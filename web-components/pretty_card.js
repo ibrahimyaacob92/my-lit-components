@@ -21,19 +21,19 @@ class prettyCard extends LitElement{
         this.colorStat = "purple"
         this.tags = ["One", "Two", "Three"]
         this.colorKey = {
-            "red":"red",
-            "green":"green",
-            "yellow":"yellow",
+            "red":"crimson",
+            "green":"limegreen",
+            "yellow":"gold",
             "purple":"purple",
             "pink":"pink",
-            "blue":"blue"
+            "blue":"royalblue"
         }
     }
     static get styles(){
         return css`
 
             #container{
-                border: 0.5px grey solid;
+                border: 0.5px lightgrey solid;
                 padding:10px 10px 8px 10px;
                 margin:10px 0px;
                 border-left: 6px grey solid;
@@ -44,6 +44,7 @@ class prettyCard extends LitElement{
 
             #container:hover{
                 background-color:white;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
             }
 
             #text-section{
@@ -56,19 +57,21 @@ class prettyCard extends LitElement{
             }
             
             #small-title{
-                color:green;
+                color:grey;
                 font-size:12px;
             }
             #title{
-                color:red;
+                color:black;
             }
 
             #subtitle{
-                color:purple;
+                color:black;
+                font-size:smaller;
             }
 
             #hidden{
-                color:blue;
+                color:green;
+                font-size:smaller;
             }
 
             #tags{
@@ -85,7 +88,7 @@ class prettyCard extends LitElement{
             }
 
             #tags span:hover{
-                background-color:yellow;
+                background-color:lightblue;
             }
 
             .clickable{
