@@ -17,9 +17,9 @@ class prettyCard extends LitElement{
 
     constructor(){
         super()
-        
+        // console.log(this.title)
         this.colorStat = "purple"
-        this.tags = ["One", "Two", "Three"]
+        this.tags = []
         this.colorKey = {
             "red":"crimson",
             "green":"limegreen",
@@ -117,9 +117,11 @@ class prettyCard extends LitElement{
 
     firstUpdated(changedProperties) {
         // this will run after first time render
+        console.log(this.tags)
     }
 
     moreDetails(){
+        console.log(this)
         var hiddenDiv = this.shadowRoot.getElementById("hidden")
         if (hiddenDiv.hidden){
             hiddenDiv.hidden = false
