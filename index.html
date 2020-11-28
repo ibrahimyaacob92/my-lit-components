@@ -25,7 +25,8 @@
             title="Hello Worlds"
             subtitle="this is a large subtitle and making"
             hiddenText="this is a toggleable text play around"
-            colorStat="blue">
+            colorStat="blue"
+            tagsStr="hello,there,this">
         </pretty-card>
     </div>
 
@@ -38,7 +39,7 @@
 
 
     <div class="demo" >
-        <p>this is a single card for carousel</p>
+        <p>this is a single card for carousel works only with JS</p>
         <carousel-card 
             title="Hello" 
             subtitle="easy going there"
@@ -49,9 +50,27 @@
     </div>
     <hr>
     <!-- inserted via js -->
-    <div class="demo" id="carousel"></div>
+    <div class="demo" id="carousel">
+        <p>this is the full carousel</p>
+    </div>
     <hr>
 
+    <div class="demo">
+        <quick-navbar>
+            <a slot="left" href="#demo1">Left 1</a>
+            <a slot="center">Center</a>
+            <a slot="right">Right 1</a>
+            <input slot="left" placeholder="search" type="text"/>
+            <a slot="right">Right 2</a>
+            <a slot="right">Right 3</a>
+        </quick-navbar>
+    </div>
+    <hr>
+
+    <div class="demo">
+
+    </div>
+    <hr>
 
 </body>
 </html>

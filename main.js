@@ -2,6 +2,7 @@ import "./web-components/icon_button.js"
 import "./web-components/json_table.js"
 import "./web-components/pretty_card.js"
 import "./web-components/easy_carousel.js"
+import "./web-components/quick_navbar.js"
 
 
 // Demo 2

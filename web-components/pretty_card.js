@@ -11,6 +11,7 @@ class prettyCard extends LitElement{
             subtitle:{type:String},
             hiddenText:{type:String, reflect:true},
             tags:{type:Array},
+            tagsStr:{type:String},
             colorKey:{type:Object}
         }
     }
@@ -99,6 +100,11 @@ class prettyCard extends LitElement{
     }
 
     render(){
+        if(this.tagsStr){
+            let newTags = this.tagsStr.split(",")
+            this.tags = this.tags.concat(newTags)
+        }
+
         return html`
             <div id="container" style="border-left-color:${this.colorKey[this.colorStat]}">
                 <div id="text-section">
@@ -117,7 +123,7 @@ class prettyCard extends LitElement{
 
     firstUpdated(changedProperties) {
         // this will run after first time render
-        console.log(this.tags)
+        // console.log(changedProperties)
     }
 
     moreDetails(){
@@ -129,8 +135,6 @@ class prettyCard extends LitElement{
             hiddenDiv.hidden = true
         }
     }
-
-
 }
 
 customElements.define('pretty-card',prettyCard)

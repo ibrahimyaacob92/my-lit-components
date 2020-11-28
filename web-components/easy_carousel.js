@@ -32,29 +32,30 @@ class easyCarousel extends LitElement{
                 justify-content:center;
                 align-items:center;
                 top:0;
+                color: lightgrey;
+                text-shadow: 0 0 20px black;
             }
             
             .nav:hover{
                 cursor:pointer;
-                opacity:0.5;
-                background-color:rgba(255,255,255,0.6)
+                background-color:rgba(255,255,255,0.1)
+
             }
             .card{
                 position:absolute;
-                animation-name: swipe;
                 animation-duration: .3s;
+                animation-timing-function: ease-in-out;
             }
 
             @keyframes swipeLeft{
-                from{opacity:0.5; left:-50px}
+                from{opacity:0.5; left:-80px}
                 to{opacity:1;left:0;}
             }
             
             @keyframes swipeRight{
-                from{opacity:0.5; right:-50px}
+                from{opacity:0.5; right:-80px;}
                 to{opacity:1;right:0;}
             }
-            
         `
     }
 
@@ -174,7 +175,6 @@ class carouselCard extends LitElement{
         `
     }
 }
-
 
 customElements.define('carousel-card',carouselCard)
 customElements.define('easy-carousel',easyCarousel)
