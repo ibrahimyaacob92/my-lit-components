@@ -21,6 +21,14 @@ hr{
     padding: 0;
     font-size: small;
     /* color:lightgray */
-    
+}
+
+@font-face {
+    font-family: Custom;
+    src: url('font/FeENrm2.ttf');
+}
+
+#custom-font{
+    font-family: Custom;
 }
 

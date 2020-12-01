@@ -34,3 +34,25 @@ var imageObject = [
 var carousel = document.createElement('easy-carousel')
 carousel.cardDataArr = imageObject
 document.getElementById('carousel').appendChild(carousel)
+
+
+// demo 2 - using element object
+var navbarElement = document.createElement('quick-navbar')
+var anElement = document.createElement('a')
+anElement.innerText = "hellow"
+anElement.slot="left"
+navbarElement.appendChild(anElement)
+document.getElementById('demo4').appendChild(navbarElement)
+
+// demo 2 - using inner html
+navbarElement.innerHTML += `<a slot="right">Yeah</a>`
+
+// demo 2 - using class custom function
+navbarElement.addATag("#","redscarf","left","hello-id", ()=>console.log('clicked'))
+navbarElement.addSearchBar("insert text", "center", "search-id", ()=>{
+    console.log(document.getElementById('search-id').value)
+})
+
+navbarElement.addDropDown(['hello', 'world','goodbye'],"right","dropdown-id",()=>{
+    alert(document.getElementById('dropdown-id').value)
+})

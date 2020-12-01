@@ -5,9 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js" type="module"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="component-slot.css">
     <title>My Web Components Playground</title>
 </head>
 <body>
+    
+    <div class="demo" id="demo4">
+        <quick-navbar>
+            <a slot="left" href="#demo1">Left 1</a>
+            <a slot="center">Center</a>
+            <a slot="right">Right 1</a>
+            <input slot="left" placeholder="search" type="text"/>
+            <a slot="right">Right 2</a>
+            <a slot="right">Right 3</a>
+        </quick-navbar>
+        <br>
+    
+        <quick-navbar>
+            <img slot="left" height="15px" src="\img\inmagine-logo.svg">
+            <input style="width:300px;" slot="left" placeholder="Search Games" type="text"/>
+            <a slot="right">About</a>
+            <a slot="right" id="custom-font">Login</a>
+        </quick-navbar>
+        <br>
+
+        <quick-navbar>
+            <img slot="center" height="15px" src="\img\inmagine-logo.svg">
+            <a slot="left">Search</a>
+            <select slot="left">
+                <option>Hello World</option>
+                <option>Selamat Dunia</option>
+                <option>Kurrita Boreas</option>
+            </select>
+            <a slot="right">IbrahimYaacob</a>
+        </quick-navbar>
+        <br>
+
+    </div>
+    <hr>
     <div id="demo1" class="demo">
         <p>A simple icon button</p>
         <div>
@@ -55,17 +90,6 @@
     </div>
     <hr>
 
-    <div class="demo">
-        <quick-navbar>
-            <a slot="left" href="#demo1">Left 1</a>
-            <a slot="center">Center</a>
-            <a slot="right">Right 1</a>
-            <input slot="left" placeholder="search" type="text"/>
-            <a slot="right">Right 2</a>
-            <a slot="right">Right 3</a>
-        </quick-navbar>
-    </div>
-    <hr>
 
     <div class="demo">
 

@@ -83,7 +83,7 @@ class easyCarousel extends LitElement{
     firstUpdated(changeProperties){
         var cards = this.shadowRoot.querySelectorAll(".card")
         cards[this.counter].hidden = false 
-        console.log(cards[this.counter].hidden)
+        // console.log(cards[this.counter].hidden)
         // document.getElementById("ASd").style.animationName
     }
 
